@@ -12,6 +12,7 @@ type Config struct {
 	Logger Logger
 	Server ServerConfig
 	Kafka  KafkaConfig
+	Email  EmailConfig
 }
 
 type Logger struct {
@@ -32,6 +33,12 @@ type KafkaConfig struct {
 	TLSCACert string   `env:"KAFKA_TLS_CA_CERT"`                              // Путь к CA-сертификату (если нужен TLS)
 	TLSCert   string   `env:"KAFKA_TLS_CERT"`                                 // Путь к клиентскому сертификату (если нужен TLS)
 	TLSKey    string   `env:"KAFKA_TLS_KEY"`                                  // Путь к клиентскому ключу (если нужен TLS)
+}
+
+type EmailConfig struct {
+	Username   string `env:"EMAIL_USERNAME"`
+	Password   string `env:"EMAIL_PASSWORD"`
+	GomailPass string `env:"GOMAIL_PASS"`
 }
 
 var (
