@@ -1,0 +1,38 @@
+definitions:
+  handler.SendCodeToEmailRequest:
+    properties:
+      code:
+        type: string
+      email:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /api/notifications/send:
+    post:
+      consumes:
+      - application/json
+      description: Отправляет письмо с кодом подтверждения на указанный email
+      parameters:
+      - description: Параметры запроса
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/handler.SendCodeToEmailRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Ошибка запроса или отправки email
+          schema:
+            type: string
+      summary: Отправка кода подтверждения на email
+      tags:
+      - Notifications
+swagger: "2.0"
