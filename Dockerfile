@@ -10,4 +10,4 @@ RUN go build -o main ./cmd/app/main.go
 
 CMD ["./main"]
 
-EXPOSE 3010
+EXPOSE 3003

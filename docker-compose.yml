@@ -7,6 +7,6 @@ services:
       - ./main
     container_name: notification_backend
     ports:
-      - "3010:3010"
+      - "3003:3003"
     env_file:
       - "./.env"
