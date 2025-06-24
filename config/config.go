@@ -38,8 +38,8 @@ type KafkaConfig struct {
 type EmailConfig struct {
 	Username string `env:"EMAIL_USERNAME,required"` // Email-адрес отправителя
 	Password string `env:"EMAIL_PASSWORD,required"`
-	Host     string `env:"EMAIL_SMTP_HOST,required"`
-	Port     string `env:"EMAIL_SMTP_PORT,required"`
+	//Host     string `env:"EMAIL_SMTP_HOST,required"`
+	//Port     string `env:"EMAIL_SMTP_PORT,required"`
 }
 
 var (
