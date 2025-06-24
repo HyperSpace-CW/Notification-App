@@ -9,3 +9,5 @@ COPY . ./
 RUN go build -o main ./cmd/app/main.go
 
 CMD ["./main"]
+
+EXPOSE 3003

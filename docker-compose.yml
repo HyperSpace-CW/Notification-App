@@ -32,6 +32,6 @@ services:
 #      - kafka
 #      - zookeeper
     ports:
-      - "3001:3001"
+      - "3003:3003"
     env_file:
       - "./.env"

@@ -20,7 +20,7 @@ type Logger struct {
 }
 
 type ServerConfig struct {
-	Addr string `env:"SERVER_ADDR,required"`
+	Addr string `env:"NOTIFICATION_SERVER_ADDR,required"`
 }
 
 type KafkaConfig struct {
