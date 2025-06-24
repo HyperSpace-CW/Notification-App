@@ -1,0 +1,50 @@
+{"level":"fatal","timestamp":"2025-04-27T12:25:00.362+0300","caller":"app/app.go:19","message":"failed to create notification service: failed to create Gmail service: credentials: unsupported filetype '\\x00'"}
+{"level":"info","timestamp":"2025-04-27T12:25:28.318+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T12:25:28.319+0300","caller":"app/app.go:17","message":"Config: &{{info} {:3001} {[broker1:9092 broker2:9092] notifications notification-service myuser mypassword false   } {roma.asav@gmail.com {\"web\":{\"client_id\":\"1094160226259-t95j221v1f1pjihju295dp0186fsn9vg.apps.googleusercontent.com\",\"project_id\":\"notification-service-458108\",\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\"client_secret\":\"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\"}}}}"}
+{"level":"fatal","timestamp":"2025-04-27T12:25:28.321+0300","caller":"app/app.go:20","message":"failed to create notification service: failed to create Gmail service: credentials: unsupported filetype '\\x00'"}
+{"level":"info","timestamp":"2025-04-27T13:12:16.781+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:12:16.781+0300","caller":"app/app.go:17","message":"Config: &{{info} {:3001} {[broker1:9092 broker2:9092] notifications notification-service myuser mypassword false   } {roma.asav@gmail.com oysy quet khui czcw smtp.gmail.com 587}}"}
+{"level":"info","timestamp":"2025-04-27T13:12:16.781+0300","caller":"app/app.go:36","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:20:14.189+0300","caller":"app/app.go:43","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:20:14.292+0300","caller":"app/app.go:47","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:20:20.575+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:20:20.575+0300","caller":"app/app.go:17","message":"Config: &{{info} {:3001} {[broker1:9092 broker2:9092] notifications notification-service myuser mypassword false   } {roma.asav@gmail.com oysy quet khui czcw smtp.gmail.com 587}}"}
+{"level":"info","timestamp":"2025-04-27T13:20:20.575+0300","caller":"app/app.go:36","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:23:32.684+0300","caller":"app/app.go:43","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:23:32.685+0300","caller":"app/app.go:47","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:23:35.591+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:23:35.592+0300","caller":"app/app.go:17","message":"Config: &{{info} {:3001} {[broker1:9092 broker2:9092] notifications notification-service myuser mypassword false   } {gomail oysy quet khui czcw smtp.gmail.com 587}}"}
+{"level":"info","timestamp":"2025-04-27T13:23:35.592+0300","caller":"app/app.go:36","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:06.789+0300","caller":"app/app.go:43","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:25:06.892+0300","caller":"app/app.go:47","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:25:26.672+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:26.672+0300","caller":"app/app.go:17","message":"Config: &{{info} {:3001} {[broker1:9092 broker2:9092] notifications notification-service myuser mypassword false   } {roma.asav@gmail.com oysy quet khui czcw smtp.gmail.com 587}}"}
+{"level":"info","timestamp":"2025-04-27T13:25:26.672+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:30.260+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:25:30.260+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:25:32.087+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:32.087+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:50.477+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:25:50.479+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:25:52.497+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:25:52.502+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:29:36.580+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:29:36.581+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:29:39.957+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:29:39.958+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:36:37.390+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:36:37.391+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:36:41.376+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:36:41.377+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:37:37.480+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:37:37.481+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:37:55.441+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:37:55.442+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:49:21.729+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:49:21.730+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:49:45.813+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:49:45.916+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}
+{"level":"info","timestamp":"2025-04-27T13:49:57.159+0300","caller":"app/app.go:16","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:49:57.159+0300","caller":"app/app.go:32","message":"Starting the application"}
+{"level":"info","timestamp":"2025-04-27T13:51:13.935+0300","caller":"app/app.go:39","message":"shutdown HTTP server..."}
+{"level":"info","timestamp":"2025-04-27T13:51:13.936+0300","caller":"app/app.go:43","message":"HTTP server successfully shutdown"}

@@ -13,6 +13,7 @@ import (
 
 func Run(cfg *config.Config) {
 	log := logger.New(cfg.Logger.Level)
+	log.Info("Starting the application")
 
 	notificationService := services.NewNotificationService(cfg)
 
@@ -21,6 +22,25 @@ func Run(cfg *config.Config) {
 		Logger:              log,
 		NotificationService: notificationService,
 	})
+
+	//brokers := []string{"kafka:9092"}
+	//topic := "notifications"
+	//group := "notification-group"
+	//
+	//// Инициализация Kafka Consumer
+	//consumer, err := consumer.NewKafkaConsumer(brokers, topic, group, notificationService)
+	//if err != nil {
+	//	log.Fatal("Failed to create KafkaConsumer: %v", zap.Error(err))
+	//}
+	//
+	//// Инициализация Kafka Producer
+	//producer, err := producer.NewKafkaProducer(brokers, topic)
+	//if err != nil {
+	//	log.Fatal("Failed to create KafkaProducer: %v", zap.Error(err))
+	//}
+
+	//ctx, cancel := context.WithCancel(context.Background())
+	//go consumer.Start(ctx)
 
 	go func() {
 		if err := httpServer.Run(); err != nil {
@@ -34,6 +54,14 @@ func Run(cfg *config.Config) {
 	signal.Notify(quit, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
 
 	<-quit
+
+	//cancel()
+	//if err := consumer.Close(); err != nil {
+	//	log.Info("Error closing KafkaConsumer: %v", zap.Error(err))
+	//}
+	//if err := producer.Close(); err != nil {
+	//	log.Info("Error closing KafkaProducer: %v", zap.Error(err))
+	//}
 
 	log.Info("shutdown HTTP server...")
 	if err := httpServer.Shutdown(); err != nil {

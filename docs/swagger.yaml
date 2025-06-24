@@ -1,0 +1,43 @@
+definitions:
+  handler.HTTPError:
+    properties:
+      message:
+        type: string
+    type: object
+  handler.SendCodeToEmailRequest:
+    properties:
+      code:
+        type: string
+      email:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /notifications/send:
+    post:
+      consumes:
+      - application/json
+      description: Отправляет пользователю код подтверждения по email
+      parameters:
+      - description: Email и код подтверждения
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/handler.SendCodeToEmailRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Невалидный запрос или ошибка отправки письма
+          schema:
+            $ref: '#/definitions/handler.HTTPError'
+      summary: Отправить код на email
+      tags:
+      - notifications
+swagger: "2.0"

@@ -3,6 +3,7 @@ package http
 import (
 	"errors"
 	"fmt"
+
 	"github.com/HyperSpace-CW/Notification-App/internal/services"
 	"github.com/HyperSpace-CW/Notification-App/internal/transport/http/handler"
 	"github.com/gofiber/fiber/v2"
@@ -87,7 +88,7 @@ type errResp struct {
 }
 
 func (s *Server) errorHandler(ctx *fiber.Ctx, err error) error {
-	//requestID := utils.GetRequestID(ctx)
+	// requestID := utils.GetRequestID(ctx)
 
 	var statusCode = fiber.StatusInternalServerError
 

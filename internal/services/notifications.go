@@ -1,19 +1,17 @@
 package services
 
 import (
+	"context"
+	"crypto/tls"
 	"fmt"
+	"log"
+
 	"github.com/HyperSpace-CW/Notification-App/config"
 	"gopkg.in/gomail.v2"
-	"log"
 )
 
 type NotificationService interface {
-	SendCodeToEmail(email string, code string) error
-}
-
-type SendCodeToEmailParams struct {
-	Email string
-	Code  string
+	SendCodeToEmail(ctx context.Context, email, code string) error
 }
 
 type notificationService struct {
@@ -26,7 +24,7 @@ func NewNotificationService(config *config.Config) NotificationService {
 	}
 }
 
-func (s *notificationService) SendCodeToEmail(email string, code string) error {
+func (s *notificationService) SendCodeToEmail(ctx context.Context, email, code string) error {
 	log.Printf("Sending email to %s with code %s", email, code)
 	msg := gomail.NewMessage()
 	msg.SetHeader("From", s.cfg.Email.Username)
@@ -41,7 +39,8 @@ func (s *notificationService) SendCodeToEmail(email string, code string) error {
             </body>
         </html>`, code))
 
-	n := gomail.NewDialer("smtp.gmail.com", 587, s.cfg.Email.Username, s.cfg.Email.GomailPass)
+	n := gomail.NewDialer("smtp.gmail.com", 587, s.cfg.Email.Username, s.cfg.Email.Password)
+	n.TLSConfig = &tls.Config{InsecureSkipVerify: true}
 
 	if err := n.DialAndSend(msg); err != nil {
 		return fmt.Errorf("s.SendCodeToEmail err: %w", err)

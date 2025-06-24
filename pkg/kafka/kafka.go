@@ -17,7 +17,7 @@ type KafkaConsumer struct {
 }
 
 type ConsumerHandler struct {
-	ready chan bool
+	Ready chan bool
 }
 
 // NewKafkaConsumer creates a new KafkaConsumer.
@@ -87,7 +87,7 @@ func RunConsumer(brokers []string, topic, group string) {
 
 	ctx, cancel := context.WithCancel(context.Background())
 	handler := ConsumerHandler{
-		ready: make(chan bool),
+		Ready: make(chan bool),
 	}
 
 	consumer.Start(ctx, handler)
